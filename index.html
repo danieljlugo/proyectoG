@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+
+  <!-- Estilos de boostrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <!-- Hoja de estilos personalizados -->
+  <link rel="stylesheet" href="./assets/main.css">
+  <!-- Jquery Slider -->
+  <link rel="stylesheet" href="/node_modules/bxslider/dist/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
+  
+   <!-- titulo web -->
+  <title>Gatunos 2.0</title>
+</head>
+<body>
+
+  <!-- Header inicio -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light text-center  ">
+      <div class="container-fluid">
+        <a class="titulo-nav navbar-brand">
+          <img src="./assets/img/logoGatunos.svg" alt="logo-gatunos" width="30" height="24" class="d-inline-block align-text-top">
+          FUNDACIÓN GATUNOS
+        </a>
+      </div>
+
+      <div class="container-fluid">
+        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+
+          <span class="navbar-toggler-icon"></span>
+
+        </button>
+        <div class="collapse navbar-collapse menu-list" id="navbarTogglerDemo01">
+          <a class="navbar-brand" href="#testimonios">Testimonios</a>
+          <a class="navbar-brand" href="#adopcion">Adopción</a>
+          <a class="navbar-brand" href="#registro">Registro</a>
+          <a class="navbar-brand" href="#contacto">Contacto</a>          
+        </div>
+
+      </div>
+    </nav>
+  </header>
+  <br>
+  <!-- Header fin -->
+  <!-- Slider inicio -->
+  <div class="slider">
+    <img src="./assets/img/slider1.jpg" alt="slider-img">
+    <img src="./assets/img/slider2.jpg" alt="slider-img">
+    <img src="./assets/img/slider3.jpg" alt="slider-img">
+  </div>
+  <hr>
+  <div>
+    <div class="powr-count-up-timer" id="5089a6b7_1642793860"></div><script src="https://www.powr.io/powr.js?platform=html"></script>
+  </div>
+  <hr>
+
+  <main>
+
+    <div id="testimonios" class="testimonios-area container">
+      <h2 class="titulo-testimonios">Testimonios</h2>
+      <!-- testimonio 1 -->
+      <div class="card mb-3">
+        <img src="./assets/img/testimonio1.jpg" class="card-img-top" alt="Testimonio1">
+        <div class="card-body">
+          <h5 class="card-title">Familia Burgos</h5>
+          <p class="card-text">La Familia Burgos realizó el registro de adopcion en el mes de noviembre 2021, y en Diciembre del mismo año pudieron adoptar a <strong>Julio</strong> un terrier mestizo de 3 años, jugueton y se lleva muy bien con los niños, desparasitado y esterilizado.</p>
+          <p class="card-text"><small class="text-muted">Diciembre 2021</small></p>
+        </div>
+      </div>
+      <!-- testimonio 2 -->
+      <div class="card mb-3">
+        <img src="./assets/img/testimonio2.jpg" class="card-img-top" alt="Testimonio2">
+        <div class="card-body">
+          <h5 class="card-title">Familia Martinez</h5>
+          <p class="card-text">La Familia Martinez participó en una jornada especial en el mes de noviembre y adoptaron a 3 felinos: <strong>Peter</strong>, <strong>Marko</strong> y <strong>Bob</strong>, estos peludos estan esterilizados, y se han integrado 
+            a su nueva familia, su independecia felina los ayudó a tener una excelente integracion, y se encuentran sanos y desparasitados.</p>
+          <p class="card-text"><small class="text-muted">Noviembre 2021</small></p>
+        </div>
+      </div>
+      <!-- testimonio 3 -->
+      <div class="card mb-3">
+        <img src="./assets/img/testimonio3.jpg" class="card-img-top" alt="testimonio3">
+        <div class="card-body">
+          <h5 class="card-title">Jornada con mayor alcance</h5>
+          <p class="card-text">En la jornada especial del mes de Ocubre del año 2021, fueron adoptados mas de 30 gatos y perros desde los 3 meses hasta los 7 años. Adicionalmente se hizo un registro para conocer el estado de salud post esterilización</p>
+          <p class="card-text"><small class="text-muted">Jornada Octubre 2021</small></p>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <div id="adopcion" class="mascotas container">
+      <h2 class="titulo-mascotas">Mascotas en Adopción</h2>
+      <br>
+      <div class="galeria-adopcion">
+        <!-- Mascota #1 -->
+        <div class="mascota-adopcion galeria-adopcion">
+          <button type="button" class="img-modal btn border border-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <img class="mascota-img" width="300px" src="./assets/img/adopcion1.png" alt="">
+          </button>
+      
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Pino</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <ul>
+                    <li>Mestizo</li>
+                    <li>2 meses</li>
+                    <li>Vacunado</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Mascota #2 -->
+        <div class="mascota-adopcion ">
+          <button type="button" class="img-modal btn border border-success" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+            <img class="gato-uno" width="300px" src="./assets/img/adopcion2.png" alt="">
+          </button>
+      
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel2">Dwayne</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <ul>
+                    <li>Mestizo</li>
+                    <li>3 meses</li>
+                    <li>Vacunado</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Mascota #3 -->
+        <div class="mascota-adopcion ">
+          <button type="button" class="img-modal btn border border-success" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+            <img class="gato-uno" width="300px" src="./assets/img/adopcion3.png" alt="">
+          </button>
+      
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel3">Toreto</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <ul>
+                    <li>Mestizo</li>
+                    <li>2 1/2 meses</li>
+                    <li>Vacunado</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Mascota #4 -->
+        <div class="mascota-adopcion ">
+          <button type="button" class="img-modal btn border border-success" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+            <img class="gato-uno" width="300px" src="./assets/img/adopcion4.png" alt="">
+          </button>
+      
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Larry y Moe</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <ul>
+                    <li>Mestizo</li>
+                    <li>3 1/2 meses</li>
+                    <li>Vacunados</li>
+                    <li>Se adoptan ambos (Hermanos)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Mascota #5 -->
+        <div class="mascota-adopcion ">
+          <button type="button" class="img-modal btn border border-success" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+            <img class="gato-uno" width="300px" src="./assets/img/adopcion5.png" alt="">
+          </button>
+      
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Elliot</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <li>Mestizo</li>
+                  <li>4 años</li>
+                  <li>Vacunado y esterilizado</li>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Mascota #6 -->
+        <div class="mascota-adopcion ">
+          <button type="button" class="img-modal btn border border-success" data-bs-toggle="modal" data-bs-target="#exampleModal6">
+            <img class="gato-uno" width="300px" src="./assets/img/adopcion6.png" alt="">
+          </button>
+      
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Tom</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <li>Mestizo</li>
+                  <li>4 meses</li>
+                  <li>Vacunado</li>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Mascota #7 -->
+        <div class="mascota-adopcion ">
+          <button type="button" class="img-modal btn border border-success" data-bs-toggle="modal" data-bs-target="#exampleModal7">
+            <img class="mascota-img" width="300px" src="./assets/img/adopcion7.png" alt="">
+          </button>
+      
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Piñon</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <li>Mestizo</li>
+                  <li>5 Años</li>
+                  <li>Vacunado y esterilizado</li>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Mascota #8 -->
+        <div class="mascota-adopcion ">
+          <button type="button" class="img-modal btn border border-success" data-bs-toggle="modal" data-bs-target="#exampleModal8">
+            <img class="gato-uno" width="300px" src="./assets/img/adopcion8.png" alt="">
+          </button>
+      
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Garfield</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <li>Mestizo</li>
+                  <li>2 meses</li>
+                  <li>Vacunado</li>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Mascota #9 -->
+        <div class="mascota-adopcion ">
+          <button type="button" class="img-modal btn border border-success" data-bs-toggle="modal" data-bs-target="#exampleModal9">
+            <img class="gato-uno" width="300px" src="./assets/img/adopcion9.png" alt="">
+          </button>
+      
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Stwart</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <li>Mestizo</li>
+                  <li>2 meses</li>
+                  <li>Vacunado</li>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <!-- Registro de adopciones -->
+    <div id="registro" class="container">
+      <h2 class="titulo-adopcion">Registro de adopción</h2>
+      <br>
+      <!-- Form de registro -->
+    
+      <form id="gatunos-form" action="enviar.php" method="post">
+          <div class=" mb-3">
+        <label for="exampleInputEmail1" class="form-label">Correo electronico</label>
+        <input name="mail" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="nombre@correo.com" required>
+      </div>
+    
+      <div class="mb-3">
+      <label for="run" class="form-label">Run</label>
+      <input name="run" type="number" class="form-control" id="exampleInputRun1" placeholder="8 digitos + Digito verificador" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="Name" class="form-label">Nombre y apellido</label>
+        <input name="name" type="name" class="form-control" id="exampleFormControlInput1" placeholder="Nombre completo" required>
+      </div>
+
+
+      <div id="datepicker" class="md-form md-outline input-with-post-icon datepicker" inline="true">
+        <label for="datepicker">Fecha de Nacimiento</label> 
+        <input name="borndate" placeholder="Select date" type="date" id="example" class="form-control" required>
+        
+      </div>
+
+      <div class="mb-3">
+        <label for="telefono" class="form-label">Telefono de contacto</label>
+        <input name="phone" type="number" class="form-control" id="exampleFormControlInput1" placeholder="Telefono celular" required>
+      </div>
+    
+      <div class="mb-3">
+      <label for="regiones" class="form-label">Region y Ciudad</label>
+      <select name="city" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" required>
+        <option selected value="0"> Elige una opción </option>
+        <optgroup label="Región I">
+          <option value="1">Iquique</option>
+          <option value="2">Pozo Almonte</option>
+          <option value="3">otro...</option>
+        </optgroup>
+        <optgroup label="Región II">
+          <option value="4">Antofagasta</option>
+          <option value="5">Calama</option>
+          <option value="6">Tocopilla</option>
+        </optgroup>
+        <optgroup label="Región III">
+          <option value="7">Copiapó</option>
+          <option value="8">Chañaral</option>
+          <option value="9">Vallenar</option>
+        </optgroup>
+        <optgroup label="Región IV">
+          <option value="10">Illapel</option>
+          <option value="11">La Serena</option>
+          <option value="12">Ovalle</option>
+        </optgroup>
+        <optgroup label="Región V">
+          <option value="13">Los Andes</option>
+          <option value="14">La Ligua</option>
+          <option value="14">Valparaiso</option>
+          <option value="15">Quilpué</option>
+          <option value="16">San Antonio</option>
+          <option value="17">Quillota</option>
+        </optgroup>
+        <optgroup label="Región VI">
+          <option value="18">Rancagua</option>
+          <option value="19">Pichilemu</option>
+          <option value="20">San Fernando</option>
+        </optgroup>
+        <optgroup label="Región VII">
+          <option value="21">Curicó</option>
+          <option value="22">Linares</option>
+          <option value="23">Talca</option>
+        </optgroup>
+        <optgroup label="Región VIII">
+          <option value="24">Los Angeles</option>
+          <option value="25">Concepción</option>
+          <option value="26">Lebu</option>
+        </optgroup>
+        <optgroup label="Región IX">
+          <option value="27">Temuco</option>
+          <option value="28">Angol</option>
+        </optgroup>
+        <optgroup label="Región X">
+          <option value="29">Puerto Montt</option>
+          <option value="30">Castro</option>
+          <option value="31">Osorno</option>
+          <option value="32">Chaitén</option>
+        </optgroup>
+        <optgroup label="Región XI">
+          <option value="33">Cochrane</option>
+          <option value="34">Puerto Aysén</option>
+          <option value="35">Coyhaique</option>
+          <option value="36">Chile Chico</option>
+        </optgroup>
+        <optgroup label="Región XII">
+          <option value="37">Punta Arenas</option>
+          <option value="38">Puerto Natales</option>
+          <option value="39">Porvenir</option>
+          <option value="40">Puerto Williams</option>
+        </optgroup>
+        <optgroup label="Región Metropolitana">
+          <option value="41">Santiago</option>
+          <option value="42">Melipilla</option>
+          <option value="43">Talagante</option>
+          <option value="44">San Bernardo</option>
+          <option value="45">Puente Alto</option>
+          <option value="46">Colina</option>
+        </optgroup>
+        <optgroup label="Región XIV">
+          <option value="47">Valdivia</option>
+          <option value="48">Panguipulli</option>
+          <option value="49">Los Lagos</option>
+          <option value="50">Río Bueno</option>
+        </optgroup>
+        <optgroup label="Región XV">
+          <option value="51">Arica</option>
+          <option value="52">Cuya</option>
+          <option value="53">Putre</option>
+          <option value="54">Visviri</option>
+        </optgroup>
+        <optgroup label="Región XIV">
+          <option value="55">Quirihue</option>
+          <option value="56">Bulnes</option>
+          <option value="57">San Carlos</option>
+        </optgroup>
+    
+        </select>
+    
+        </div>
+
+        <div>
+          <label for="vivienda" class="form-label">Tipo de Vivienda</label>
+          <select name="hometype" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" required>
+            <option selected value="0"> Elige una opción </option>
+            <option value="1">Casa con patio grande</option>
+            <option value="2">Casa con patio pequeño</option>
+            <option value="3">casa sin patio</option>
+            <option value="4">Departamento</option>
+          </select>
+        </div>
+    
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1" norequired>Suscribete a nuestro boletin!</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    
+      </form>
+    </div>
+
+  </main>
+  <br><br>
+  <footer>
+    <!-- Footer -->
+<footer id="contacto" class="text-center text-lg-start bg-dark text-muted">
+  <br>
+  <!-- Section: footer  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Fundación Gatunos
+          </h6>
+          <p>
+            Somos una <strong>Fundación</strong> que inició sus actividades en el año 2010, realizando infinitas Jornadas de adopcion, esterilizacion y concientizacion.
+          </p>
+          <div class="me-5 d-none d-lg-block">
+            <span>Fundación Gatunos es una sociedad sin fines de lucro</span>
+          </div>
+        </div>
+
+        <!-- Adopción Footer -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+            Jornadas de Adopción
+          </h6>
+          <p>
+            <a class="text-reset">Santiago</a>
+          </p>
+          <p>
+            <a class="text-reset">Pudahuel</a>
+          </p>
+          <p>
+            <a class="text-reset">Puente Alto</a>
+          </p>
+          <p>
+            <a class="text-reset">Las Condes</a>
+          </p>
+        </div>
+
+        <!-- Veterinarias -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Veterinarias
+          </h6>
+          <p>
+            <a href="https://sabuesos.cl/" target="_blank" class="text-reset">Sabuesos</a>
+          </p>
+          <p>
+            <a href="https://www.hvs.cl/" target="_blank" class="text-reset">Hospital Veterinario de Santiago</a>
+          </p>
+          <p>
+            <a href="https://www.ravuchile.cl/" target="_blank" class="text-reset">Red de Atención Veterinaria</a>
+          </p>
+          <p>
+            <a href="https://clinicaveterinariasantiago.cl/" target="_blank" class="text-reset">Clinica Veterinaria Santiago</a>
+          </p>
+        </div>
+        <!-- Contacto -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+            Contacto
+          </h6>
+          <p><i class="fas fa-home me-3"></i>Santiago de Chile, Chile</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            info@fundaciongatunos.org
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 56 2  4567 8899</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2022 Copyright:
+    <a class="text-reset fw-bold" href="">Fundación Gatunos</a>
+  </div>
+
+</footer>
+<!-- Slider jquery -->
+<script>
+  $(document).ready(function(){
+    $('.slider').bxSlider();
+  });
+</script>
+
+  <script>
+    // validacion plugin
+    $(document).ready(function () {
+      $("#gatunos-form").validate();
+    });
+  </script>
+
+  <script src="/assets/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  
+</body>
+</html>

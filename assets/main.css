@@ -1,0 +1,102 @@
+/* 
+Fuente google fonts: para titulos y subtitulos
+font-family: 'Luckiest Guy', cursive;
+ */
+body {
+    background-image: url(./img/v1008-25-a.jpg);
+    background-size:cover;
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.slider {
+display: flex;
+justify-content: center;
+}
+
+.menu-list li {
+    padding: 0px 50px;
+}
+
+.galeria-adopcion {
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: space-around;
+
+
+}
+
+.mascota-adopcion {
+    margin: 20px 20px;
+
+}
+
+.img-modal {
+    background-color: white;
+
+}
+
+.titulo-nav {
+    font-family: 'Luckiest Guy', cursive;
+
+}
+
+.titulo-testimonios {
+    font-family: 'Luckiest Guy', cursive;
+    text-align: center;
+    font-size: 50px;
+
+}
+
+.titulo-mascotas {
+    font-family: 'Luckiest Guy', cursive;
+    text-align: center;
+    font-size: 50px;
+
+
+}
+
+.titulo-adopcion {
+    font-family: 'Luckiest Guy', cursive;
+    text-align: center;
+    font-size: 50px;
+
+}
+
+
+.loader {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color:#eedb878f;
+    position: absolute;
+
+}
+
+.loader div{
+    height: 100px;
+    width: 100px;
+    background-image: url(./img/favicon.png);
+    background-size:cover;
+    position: absolute;
+    margin:auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+    animation:spin 5s infinite linear;
+
+
+
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
